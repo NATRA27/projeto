@@ -1,0 +1,166 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo e alinhamento */
+body {
+    background: linear-gradient(180deg, #1e1e1e, #3b3b3b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Avatar */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Nome de usuário */
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Botão de troca de tema */
+.toggle {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Estilo dos links */
+.links a {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: background 0.3s;
+}
+
+.links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Ícones das redes sociais */
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+ion-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+ion-icon:hover {
+    color: #ffcc00;
+}
+
+/* Rodapé */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Modo Claro */
+.light-mode {
+    background: linear-gradient(180deg, #ffffff, #dddddd);
+    color: black;
+}
+
+.light-mode .links a {
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.light-mode .links a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.light-mode ion-icon {
+    color: black;
+}
+/* Botões com borda branca */
+.links a {
+    display: block;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    border: 1px solid white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.links a:hover {
+    background: white;
+    color: black;
+}
+
+/* Estilo do switch de tema */
+.toggle {
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    transition: left 0.3s;
+}
+
+.light-mode .toggle::before {
+    left: 25px;
+}
+
+/* Ícones sociais */
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+ion-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+ion-icon:hover {
+    color: #ffcc00;
+}

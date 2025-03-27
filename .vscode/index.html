@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/avatar.png" alt="Avatar do usuário" class="avatar">
+        <h1>maykybrito</h1>
+      
+        <div id="switch" onclick="toggleMode()"> 
+          <button></button>
+
+        </div>
+        
+        <div class="toggle">
+            <ion-icon name="sunny" id="theme-icon"></ion-icon>
+        </div>
+
+        <div class="links">
+            <a href="#">Inscrever-se no NLW</a>
+            <a href="#">Baixar meu e-book</a>
+            <a href="#">Ver meu portfólio</a>
+            <a href="#">Conheça o Explorer</a>
+        </div>
+
+        <div class="social">
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+
+        <p>Feito com ❤️ pela Rocketseat</p>
+    </div>
+
+    <script>
+        const themeIcon = document.getElementById("theme-icon");
+        themeIcon.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+            themeIcon.name = document.body.classList.contains("light-mode") ? "moon" : "sunny";
+        });
+    </script>
+</body>
+</html>
+<!-- Alternador de tema -->
+<div class="toggle" id="theme-toggle">
+    <ion-icon name="moon"></ion-icon>
+    <ion-icon name="sunny"></ion-icon>
+</div>
+
+<script src="./script.js"></script>"
